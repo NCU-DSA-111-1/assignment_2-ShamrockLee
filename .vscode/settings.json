@@ -3,9 +3,5 @@
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/bourgeous_popen3_2011",
         "${workspaceFolder}/skeeto_optparse"
-    ],
-    "files.associations": {
-        "signal.h": "c",
-        "error.h": "c"
-    }
+    ]
 }
