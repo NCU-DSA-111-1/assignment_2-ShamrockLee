@@ -1,0 +1,1 @@
+SUBDIRS = gnushogi main
