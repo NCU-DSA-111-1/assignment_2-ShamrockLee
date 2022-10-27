@@ -2,3 +2,7 @@
 	path = skeeto_optparse
 	url = https://github.com/skeeto/optparse.git
 	branch = master
+[submodule "gnushogi"]
+	path = gnushogi
+	url = https://github.com/gnu-mirror-unofficial/gnushogi.git
+	branch = master
