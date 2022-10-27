@@ -1,4 +1,9 @@
 /*
+ * This file is adapted from the popen3_2011.c by Mike Bourgeous (@mike-bourgeous),
+ * extracted from his Gist, renamed and fixed the typo mensioned in the reply message on the Gist page.
+ * This derived work is also released into the public domain/CC0 (by Yueh-Shun Li (@ShamrockLee) in 2022).
+ * The following is the notice from the original file:
+ *
  * This implementation of popen3() was created from scratch in June of 2011.  It
  * is less likely to leak file descriptors if an error occurs than the 2007
  * version and has been tested under valgrind.  It also differs from the 2007
@@ -124,7 +129,7 @@ pid_t popen3(char *command, int *writefd, int *readfd, int *errfd)
 	}
 	if(errfd) {
 		close(err_pipe[1]);
-		set_cloexec(out_pipe[0]);
+		set_cloexec(err_pipe[0]);
 		*errfd = err_pipe[0];
 	}
 
