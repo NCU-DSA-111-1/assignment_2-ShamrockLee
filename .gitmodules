@@ -1,0 +1,4 @@
+[submodule "skeeto_optparse"]
+	path = skeeto_optparse
+	url = https://github.com/skeeto/optparse.git
+	branch = master
