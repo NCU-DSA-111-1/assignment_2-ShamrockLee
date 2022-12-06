@@ -2,7 +2,7 @@
   description = "MyShogi, a program to play shogi created for NCU CO2012 Homowork 2 and 3";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.05";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.11";
 
   outputs = { self, flake-utils, nixpkgs, ... }@inputs:
     flake-utils.lib.eachSystem flake-utils.lib.allSystems (system:
