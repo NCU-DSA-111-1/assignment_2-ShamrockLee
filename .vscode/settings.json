@@ -5,5 +5,10 @@
         "${workspaceFolder}/skeeto_optparse"
     ],
     "nixEnvSelector.suggestion": false,
-    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix"
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "files.associations": {
+        "errno.h": "c",
+        "popen3.h": "c",
+        "cctype": "c"
+    }
 }
