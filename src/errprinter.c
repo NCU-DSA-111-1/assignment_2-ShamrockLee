@@ -15,7 +15,7 @@ void errprinter(const int fd_target_err, const pid_t pid_target,
 		while (fputc(fgetc(pf_target_err), stderr) != '\n')
 			;
 	}
-	dup2(pf_target_err, STDERR_FILENO);
+	dup2(fd_target_err, STDERR_FILENO);
 	fclose(pf_target_err);
 }
 
