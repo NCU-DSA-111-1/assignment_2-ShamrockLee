@@ -1,6 +1,7 @@
 {
     "C_Cpp.default.cStandard": "gnu17",
     "C_Cpp.default.includePath": [
+        "${wkrkspaceFolder}/include",
         "${workspaceFolder}/bourgeous_popen3_2011",
         "${workspaceFolder}/skeeto_optparse"
     ],

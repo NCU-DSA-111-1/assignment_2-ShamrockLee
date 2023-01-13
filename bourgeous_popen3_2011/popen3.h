@@ -47,7 +47,7 @@ static int set_cloexec(int fd)
  * command's stdin, stdout, or stderr will not be changed.  Returns the child
  * PID on success, -1 on error.
  */
-pid_t popen3(char *command, int *writefd, int *readfd, int *errfd)
+pid_t popen3(const char *command, int *writefd, int *readfd, int *errfd)
 {
 	int in_pipe[2] = {-1, -1};
 	int out_pipe[2] = {-1, -1};
