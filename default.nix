@@ -4,7 +4,6 @@
 , ninja
 , gnushogi ? null
 , libev
-, enableBuiltinGnushogi ? false
 }:
 
 stdenv.mkDerivation {
@@ -19,14 +18,14 @@ stdenv.mkDerivation {
   ];
 
   buildInputs = [
+    gnushogi
     libev
-  ]
-  ++ lib.optional (!enableBuiltinGnushogi) gnushogi
-  ;
+  ];
 
   meta = with lib; {
     description = "A shogi program";
     platform = platforms.all;
     maintainers = with maintainers; [ ShamrockLee ];
+    mainProgram = "myshogi";
   };
 }
